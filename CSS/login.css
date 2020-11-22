@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/exercito_curdo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login {
+    margin-top: 12%;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 320px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    color: #000000;
+    background-color: rgba(255,255,255, 0.8);
+    box-sizing: border-box;
+}
+.formulario{
+    margin-top: -25%;
+}
+.usuario{
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left:112px;
+}
+h1 {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+.login p{
+    margin: 0;
+    padding: 0;
+}
+.login input {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 21px;
+}
+.login input[type="text"] {
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 10px;
+    font-size: 12px;
+}
+.login input[type="submit"]{
+border:none;
+outline:none;
+height:35px;
+color:white;
+background: black;
+border-radius: 20px;
+}
+.login input[type="submit"]:hover{
+    cursor: pointer;
+    background: white;
+    color:black;
+}
+img{
+    border: 2px solid black;
+    border-radius: 100%;
+}
