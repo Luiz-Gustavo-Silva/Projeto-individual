@@ -6,7 +6,7 @@ body{
     background-color: black;
     margin:0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container{
     /*border:1px solid red;*/
@@ -40,13 +40,17 @@ body{
 .titulo_hdr span{
     color:goldenrod;
 }
-
-.botoes{
-    padding-top: 25px;
-    float:right;
+.titulo_usuario{
+    float: right;
+    margin-left: 10px;
+    padding-top: 23px;
+    color:goldenrod;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.botoes button{
-    height: 36px;
+.icon_header{
+    float: right;
+    padding-top: 14px;
 }
 
 
@@ -62,7 +66,7 @@ body{
     background: rgb(222 222 222 / 90%);
     width: 80%;
     border: 2px solid black;
-    height: 127%;
+    height: 135%;
 }
 .navegar {
     float: right;
@@ -72,7 +76,7 @@ body{
     position: fixed;
     width: 20%;
     border: 2px solid black;
-    height: 85%;
+    height: 34%;
 }
 .titulo_texto {
     font-size: 38px;
@@ -91,7 +95,7 @@ body{
     linear-gradient(0deg, #000000, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Gill Sans MT;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: bold;
     text-align: center;
@@ -107,7 +111,7 @@ body{
     align-items: justify;
     list-style:none;
     position: unset;
-    font-family: Gill Sans MT;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
     color: #000000;
     margin-left: 15px;
@@ -144,5 +148,5 @@ p{
     margin-left: 7px;
 }
 .paragrafo{
-    
+   margin-left: 40px; 
 }
