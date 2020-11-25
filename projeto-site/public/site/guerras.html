@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="CSS/guerra.css">
     <script type="text/javascript" href="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script href="JS/slide.js"></script>
-    <title>Index</title>
+    <title>SoftBunker - Guerras</title>
     <script src="https://kit.fontawesome.com/86aca91fc9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,11 +33,12 @@
             <center>
                 <h1 class="titulo_texto">Qual guerra adentrar?</h1>
             </center>
-            <nav class="container">
-                <p class="texto_text paragrafo">Essa área aqui é responsável para ter informações mais detalhadas sobre os principais<br></p>
-                    <span class="texto_text">conflitos do mundo.<br></span>
-                <a href="primeira_guerra.html"><b style="color:black;"class="subtitulo1"><u>1ª Guerra Mundial</u></b></a>
-            </nav>
+            <div class="container">
+                <span class="texto_text paragrafo">Essa área aqui é responsável para ter informações mais detalhadas sobre os principais</span>
+                    <span class="texto_text">conflitos do mundo, temos diversas informações valiosas, por favor selecione a guerra interessada
+                        clicando no título que a descreve.<br><br></span>
+                <a href="primeira_guerra.html"><b style="color:black;"class="subtitulo1"><u>Primeira Guerra Mundial</u></b></a>
+            </div>
             <div class="container">
                 <div class="alinhar">
                     <img class="carrossel1 imagem_guerra" id="imagem_guerra" src="imagens/primeiraguerra.jpg" width="450px" height="300px">
@@ -47,19 +48,30 @@
                 </div>
                 <br><div class="guia">Altere as imagens </div>
                     <div class="centralizar bloquinho_de_imagens">
-                        <a href="#imagem_guerra"><img class="botao" id="botao1" src="imagens/branco.png"></a>
-                        <a href="#imagem_guerra1"><img class="botao" id="botao2" src="imagens/branco.png"></a>
-                        <a href="#imagem_guerra2"><img class="botao" id="botao3" src="imagens/branco.png"></a>
-                        <a href="#imagem_guerra3"><img class="botao" id="botao4" src="imagens/branco.png"></a>
+                        <a href="#imagem_guerra"><img class="botao" onclick="mudar_1_1()" id="botao1" src="imagens/branco.png"></a>
+                        <a href="#imagem_guerra1"><img class="botao"  onclick="mudar_1_2()"id="botao2" src="imagens/branco.png"></a>
+                        <a href="#imagem_guerra2"><img class="botao"  onclick="mudar_1_3()"id="botao3" src="imagens/branco.png"></a>
+                        <a href="#imagem_guerra3"><img class="botao"  onclick="mudar_1_4()"id="botao4" src="imagens/branco.png"></a>
                     </div>
-                    <div>
-                        <br><br><br>
-                        <a href="segunda_guerra.html"><b style="color:black;"class="subtitulo1"><u>2ª Guerra Mundial</u></b></a>
+                    <br><br>
+                    <a href="segunda_guerra.html"><b style="color:black;"class="subtitulo1"><span class="subtitulo2"><u>Segunda Guerra Mundial</u></span></b></a>
+                    <div class="alinhar2">
+                        <img class="carrossel2 imagem_guerra_2" id="imagem_guerra_2" src="imagens/segundaguerra.png" width="450px" height="300px">
+                        <img class="carrossel2 imagem_guerra_2_1" id="imagem_guerra_2_1" src="imagens/segundaguerra1.jpg" width="450px" height="300px">
+                        <img class="carrossel2 imagem_guerra_2_2" id="imagem_guerra_2_2" src="imagens/segundaguerra2.jpg" width="450px" height="300px">
+                        <img class="carrossel2 imagem_guerra_2_3" id="imagem_guerra_2_3" src="imagens/segundaguerra3.jpg" width="450px" height="300px">
+                    </div>
+                    <br><div class="guia">Altere as imagens </div>
+                        <div class="centralizar bloquinho_de_imagens">
+                            <a href="#imagem_guerra_2"><img class="botao" onclick="mudar_2_1()" id="botao1" src="imagens/branco.png"></a>
+                            <a href="#imagem_guerra_2_1"><img class="botao" onclick="mudar_2_2()" id="botao2" src="imagens/branco.png"></a>
+                            <a href="#imagem_guerra_2_2"><img class="botao" onclick="mudar_2_3()" id="botao3" src="imagens/branco.png"></a>
+                            <a href="#imagem_guerra_2_3"><img class="botao" onclick="mudar_2_4()" id="botao4" src="imagens/branco.png"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
     
-
+ 
 
         <!---->
         <div class="navegar">
@@ -80,11 +92,58 @@
 </html>
 
 <script>
-    if(botao1.style='display:block' == true){
-        alert("funcionou");
+    imagem_guerra_2_1.style = `display:none`;
+        imagem_guerra_2_2.style = `display:none`;
+        imagem_guerra_2_3.style = `display:none`;
+    function mudar_1_1(){
+        imagem_guerra.style = `display:block`;
+        imagem_guerra1.style = `display:none`;
+        imagem_guerra2.style = `display:none`;
+        imagem_guerra3.style = `display:none`;
     }
-    window.location = "#imagem_guerra";
-    function voltar(){
-        alert("funfo");
+    function mudar_1_2(){
+        imagem_guerra.style = `display:none`;
+        imagem_guerra1.style = `display:block`;
+        imagem_guerra2.style = `display:none`;
+        imagem_guerra3.style = `display:none`;
     }
+    function mudar_1_3(){
+        imagem_guerra.style = `display:none`;
+        imagem_guerra1.style = `display:none`;
+        imagem_guerra2.style = `display:block`;
+        imagem_guerra3.style = `display:none`;
+    }
+    function mudar_1_4(){
+        imagem_guerra.style = `display:none`;
+        imagem_guerra1.style = `display:none`;
+        imagem_guerra2.style = `display:none`;
+        imagem_guerra3.style = `display:block`;
+    }
+    //Parte 2
+    function mudar_2_1(){
+        imagem_guerra_2.style = `display:block`;
+        imagem_guerra_2_1.style = `display:none`;
+        imagem_guerra_2_2.style = `display:none`;
+        imagem_guerra_2_3.style = `display:none`;
+    }
+    function mudar_2_2(){
+        imagem_guerra_2.style = `display:none`;
+        imagem_guerra_2_1.style = `display:block`;
+        imagem_guerra_2_2.style = `display:none`;
+        imagem_guerra_2_3.style = `display:none`;
+    }
+    function mudar_2_3(){
+        imagem_guerra_2.style = `display:none`;
+        imagem_guerra_2_1.style = `display:none`;
+        imagem_guerra_2_2.style = `display:block`;
+        imagem_guerra_2_3.style = `display:none`;
+    }
+    function mudar_2_4(){
+        imagem_guerra_2.style = `display:none`;
+        imagem_guerra_2_1.style = `display:none`;
+        imagem_guerra_2_2.style = `display:none`;
+        imagem_guerra_2_3.style = `display:block`;
+    }
+    imagem_guerra.style = `display:block`;
+    imagem_guerra_2.style = `display:block`;
 </script>
