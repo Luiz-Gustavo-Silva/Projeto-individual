@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/carrossel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wall wall-1" id="wall-1">
+          <a href="#wall-3">Voltar</a>
+          <h1>Carrocel numero - 1</h1>
+          <a href="#wall-2">Avançar</a>
+        </div>
+        
+        <div class="wall wall-2" id="wall-2">
+          <a href="#wall-1">Voltar</a>
+          <h1>Carrocel numero - 2</h1>
+          <a href="#wall-3">Avançar</a>
+        </div>
+        
+        <div class="wall wall-3" id="wall-3">
+          <a href="#wall-2">Voltar</a>
+          <h1>Carrocel numero - 3</h1>
+          <a href="#wall-1">Avançar</a>
+        </div>
+      </div>
+</body>
+</html>
+
+<script>
+    window.location = "#wall-1";
+</script>

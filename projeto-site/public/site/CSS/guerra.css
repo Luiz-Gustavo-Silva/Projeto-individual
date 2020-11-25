@@ -1,4 +1,74 @@
 .subtitulo1{
-font-size: 24px;
-margin-left: 40%;
+    font-size: 24px;
+    margin-left: 40%;
 }
+.imagens_guerra{
+    float: left;
+}
+.imagem_guerra{
+    border: 3px solid #000000;
+    margin:auto;
+    display: none;
+    width: 450px;
+    height: 300px;
+}
+.imagem_guerra1{
+    border: 3px solid #000000;
+    margin:auto;
+    display: none;
+    width: 450px;
+    height: 300px;
+}
+.imagem_guerra2{
+    border: 3px solid #000000;
+    margin: auto;
+    display: none;
+    width: 450px;
+    height: 300px;
+}
+.imagem_guerra3{
+    border: 3px solid #000000;
+    margin: auto;
+    display: none;
+    width: 450px;
+    height: 300px;
+}
+.carrossel1:target{
+    display: block;
+    margin-top: 7%;
+}
+.alinhar{
+    display:left;
+}
+.botao {
+    border: 2px solid #000000;
+    border-radius: 20px;
+    width: 48px;
+    height: 10px;
+}
+.guia {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: -webkit-linear-gradient(#FF5C00, #000000);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: left;
+    font-size: 24px;
+    margin-left: 5%;
+}
+.bloquinho_de_imagens {
+    float: left;
+    width: 25%;
+    margin-top: 4px;
+    margin-left: 11.2%;
+    border: 2px solid #000000;
+}
+.centralizar{
+    background-color: #777777;
+    border-radius: 20px;
+}
+#botao1 {
+    margin-left: 3.5px;
+    margin-top: 3.5px;
+}
+/* Acima se trata da primeira guerra */
