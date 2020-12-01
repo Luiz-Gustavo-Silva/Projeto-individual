@@ -1,0 +1,87 @@
+--	Eu passei a ter um interesse pelo estudo das
+guerras no segundo ano do ensino médio, por volta de
+2018, onde eu tive um professor de história que des-
+pertou em mim um interesse pelo assunto pelo o metó-
+do de ensino dele, ele não passava textos enormes 
+para copiarmos ou lermos, ele ia sempre pontuando e
+ministrando pra gente informações extremamente rele-
+vantes e curiosidades interessantissímas.
+
+--	Acredito que este tema de guerra não está in
+serido apenas no meu dia a dia, mas no de todo mundo
+afinal todo dia nos levantarmos, enfrentarmos nossa
+rotina, principalmente em meio a essa pandemia, tor-
+na-se uma batalha, uma batalha longa, as vezes exaus
+tiva e para não nos deixarmos sermos vencidos temos
+que lutar cada vez mais e sempre buscando se supe-
+rar, por que se você se render, custa exatamente tu-
+do o que conquistamos até então. Isso foi exatamente
+o que os soldados vivenciaram em meio a esses perío-
+dos, mas claro desumanamente pior.
+
+--	Escolhi o tema mais por que é um tema que eu
+tenho certeza que se eu fosse pesquisar sobre, eu
+não iria me cansar, iria me empolgar e cada vez ir
+me afundando, não é atoa que eu aprendi muito mais
+sobre as guerras, alguns fatos que eu nunca soube,
+como por exemplo os brasileiros Geraldo, Geraldo e
+Armindo, 3 soldados brasileiros que tiveram seu a-
+vião derrubado pelos alemães nazistas, la na Segunda
+Guerra Mundial, os 3 soldados então ficaram em con-
+fronto por horas com os nazistas, eles tinham a op-
+ção de ter se rendido, eles iriam para prisão mas
+teriam uma chance de não serem mortos, contudo pre-
+feriram lutar, incansavelmente, infelizmente morre-
+ram, mas até pelos seus próprios inimigos foram con-
+decorados e enterrados com dignidade (e pra tocar o
+coração desses alemães era dificil em).
+
+----------------------------------------------------
+--	Compromisso com minhas obrigações (já que 
+sou uma pessoa que não tem facilidades com design e 
+menos ainda com HTML e CSS, se tornando pra mim um
+enorme desafio, é uma coisa que de fato eu não gosto,
+prefiro muito mais as linguagens de baixo nível como
+Batch, Cobol, C até mesmo JavaScript foi uma das me-
+lhores linguagens as quais eu ja usei.
+--	Determinação, poís pra mim não é nem um pou-
+co fácil lidar com um certo detalhismo que tenho, é
+como se o trabalho nunca ficasse do meu agrado.
+--	Perserverança, já que permanecer fazendo-o
+por muitas horas seguidas foi de fato uns dos desa-
+fios que passei, o bom é que eu ja tinha desenhado
+mentalmente o cronograma que ia seguir, para não ter
+conflito com os trabalhos dos outros cursos (no caso
+o curso de espanhol e o de ADS).
+
+----------------------------------------------------
+A maior superação, não só quanto a realização desse
+desafio mas quanto a tudo em geral, foi a perda de
+uma preguiça o qual eu sempre convivia, basicamente
+eu era meio acomodado, embora eu estivesse encarre-
+gado de muitas tarefas eu conseguia entrega-las, mas
+não seria com todo meu empenho nela, quando comecei
+a faculdade, junto com os cursos, meio que percebi
+que não seria aquele "mamão com açucar"(afinal odeio
+mamão). Cheguei até mesmo a passar varias madrugadas
+fazendo lições, isso que a faculdade nem passou tan-
+tas, mais os exercícios para praticarmos que nem fo-
+ram muitos (deixando bem claro que não estou recla-
+mando, são exercícios que dão vontade de fazer).
+
+----------------------------------------------------
+--	A maior dificuldade foi estilizar a página
+com toda certeza, mas posso dizer que com isso a-
+prendi diversas coisas de CSS que eu jamais aprendi,
+posso até ter visto, mas ver e aprender não são sino
+nimos.
+
+---------------------------------------------------
+--	Não há alguém em específico, mas sim um con-
+junto de pessoas, eu não acho justo agradecer só a 
+um, agradeceria se ele fosse o único sujeito que ti-
+vesse me ajudado, como não é esse o fato, agradeço a 
+todos professores sem exceção, alguns colegas de 
+classe e meu grupo de PI.
+
+----------------------------------------------------

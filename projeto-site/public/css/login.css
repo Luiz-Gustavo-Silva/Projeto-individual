@@ -1,14 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(../imagens/exercito_chines.jpg);
+    background-image: url(../imagens/exercito_curdo.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .login {
-    margin-top: 9%;
+    margin-top: 12%;
     padding-left: 50px;
     padding-right: 50px;
     width: 320px;
@@ -27,11 +27,12 @@ position: absolute;
 top: -50px;
 left:112px;
 }
-h1{
+h1 {
     margin: 0;
     padding-top: 0;
     padding-left: 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
     text-align: center;
     font-size: 30px;
 }
@@ -42,7 +43,7 @@ h1{
 .login input {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
 }
 .login input[type="text"] {
     border: none;
@@ -62,15 +63,28 @@ h1{
     height: 10px;
     font-size: 12px;
 }
-.login input[type="submit"]{
-border:none;
-outline:none;
-height:35px;
-color:white;
-background: black;
-border-radius: 20px;
+.sem_conta{
+    text-align: left;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
 }
-.login input[type="submit"]:hover{
+.sem_conta:hover{
+    color:white;
+}
+#botao{
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 200px;
+    margin-top: 7%;
+    margin-bottom: 21px;
+    color: white;
+    background: black;
+    border-radius: 20px;
+}
+#botao:hover{
     cursor: pointer;
     background: white;
     color:black;
@@ -78,7 +92,4 @@ border-radius: 20px;
 img{
     border: 2px solid black;
     border-radius: 100%;
-}
-.img_nav{
-    width:10px;
 }

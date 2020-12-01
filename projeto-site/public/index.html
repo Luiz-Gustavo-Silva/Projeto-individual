@@ -1,92 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj. Individual | Meu nome aqui</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>SoftBunker - Seja bem-vindo!</title>
 </head>
- 
-
 <body>
-    <!--header inicio-->
     <div class="header">
         <div class="container">
-            <h1 class="titulo">meu <span class="highlight">projeto</span> individual</h1>
-            <div class="nav">
-                <ul>
-                    <li><a href="" class="current">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="meu_cadastro.html">Cadastro</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
+            <div class="logo">
+                <img src="imagens/logo.png">
+            </div>
+            <div class="titulo_hdr">
+                <b><span>S</span>oftBunker</b>
+            </div>
+            <div class="titulo_usuario" id="titulo_user">
+                Usuário
+            </div>
+            <div class="icon_header">
+                <img width="50px" src="imagens/icon_index.png">
             </div>
         </div>
     </div>
-    <!--header fim-->
+    <!-- Aqui acima é todo o header -->
 
-    <!--banner inicio-->
-    <div class="banner">
-        <div class="container">
-            <div class="texto">
-                <h1 class="titulo">
-                    Este meu projeto tem um design único...
-                </h1>
-                <h3>
-                    ... assim como eu!
-                </h3>
+    <div class="cont_conteudo">
+        <div class="texto">
+            <center>
+                <h1 class="titulo_texto">Seja Bem vindo Soldado!</h1>
+            </center>
+            <div class="container">
+                <div class="texto_text">
+                    <p><b class="paragrafo">Sentido!!!</b> Bem vindo à página inicial soldado, espero que goste e aproveite todo 
+                    o nosso conteúdo. Use a parte de navegar para obter informações sigilosas sobre o território inimigo e até mesmo um pouco
+                    sobre o criador da página.<br></p>
+                    <p class="distanciamento paragrafo">Está tudo em paz como pode ver, quando quiser, daremos o golpe.
+                </div>
+                <div>
+                    <img class="mapa" src="imagens/Paises.jpg">
+                </div>
+                <div class="bloquinho_legenda"></div>
+                    <p> &nbsp;Paises em paz.</p>
+                </div>
+            </div>
+            <div class="navegar">
+                <h1 class="titulo_texto2">Navegar</h1>
+                <p class="nav_text">
+                <b><u>Home</u></b>
+                    <img height="30px" src="imagens/home_icon.png"><br>
+                    <a style="color:black" href="guerras.html">Guerras</a>
+                    <img height="30px" src="imagens/arma_icon.png"><br>
+                    <a style="color:black" href="curiosidades.html">Mapas Mentais</a>
+                    <img height="30px" src="imagens/mapaMental.png"><br>
+                    <a style="color:black" href="sobre.html">Sobre mim</a>
+                    <img height="30px" src="imagens/usuario_icon.png"><br>
+                </p>
             </div>
         </div>
-    </div>
-    <!--banner fim-->
-
-    <!--novidades e-mail inicio-->
-    <div class="novidades">
-        <div class="container">
-            <div class="saber-mais">
-                <h2>Quer saber mais sobre mim?</h2>
-                <a href="sobre.html">
-                    <button type="submit" class="btn-index" >Acessar sobre</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--novidades e-mail fim--> 
-
-    <!-- icones inicio -->
-    <div class="box">
-        <div class="container">
-            <div class="box-item">
-                <img src="img/missao.png">
-                <h3>Missão</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box-item">
-                <img src="img/visao.png">
-                <h3>Visão</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box-item">
-                <img src="img/valores.png">
-                <h3>Valores</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            
-        </div>
-    </div>
-    <!-- icones fim -->
-
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com <i class="far fa-heart"></i> por um aluno BandTec &COPY; 2020</h4>
-        </div>
-    </div>
-    <!--footer fim-->
-
-    
 </body>
-
 </html>
+<script>
+    alert(sessionStorage.setItem('nome'));
+</script>

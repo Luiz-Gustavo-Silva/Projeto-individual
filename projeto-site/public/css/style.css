@@ -1,274 +1,135 @@
-body {
-    font-family: consolas, monospace;
+/* A estilização global*/
+body{
+    background-image: url("../imagens/exercito_russo.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin:0;
     padding: 0;
-        /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
-    margin: 0;
-        /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
-    background-color: #bf7788;
-    background-image: url(../img/flowers_bg.jpg);
-    background-size: cover;
-    background-position: fixed;
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.btn-index {
-    color: white;
-    background-color:  #bf7788;
-    border: 0;
-    padding: 10px 20px;
-
-    border-radius: 5px;
-    cursor: pointer;
-
-    font-family: consolas, monospace;
-}
-
-.container { 
-    width: 80%;
+.container {
+    width: 90%;
+    height: 5%;
     margin: auto;
+    text-align: justify;
 }
-
-h1 {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* CABEÇALHO */
-
+/*Início da estilização do header*/
 .header {
-        /*overflow: auto; /* cuidado*/
-    height: 100px;
+    background-color: #000000;
+    position:fixed; /* Para não sair do lugar com a barra de rolagem*/
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid red;
 }
-
-.header .container {
+.logo img{
+    float: left;
     height: 80px;
 }
-
-.header .container .highlight {
-    color: #bf7788
-}
-
-.header h1 {
-    margin: 0;
-    padding: 0;
+.titulo_hdr{
+    padding-top: 18px;
     float: left;
-        /*ATENÇÃO - VAI SUMIR A NAV*/
-    margin-top: 30px;
-    color: #232323;
+    color:red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 44px;
 }
-
-.header ul {
-    list-style-type: none;
-        /*ATENÇÃO - NAO É NO NAV*/
+.titulo_hdr span{
+    color:goldenrod;
+}
+.titulo_usuario{
     float: right;
-        /*ATENÇÃO - VAI SUMIR A NAV*/
-    margin-top: 40px;
+    margin-left: 10px;
+    padding-top: 23px;
+    color:goldenrod;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.header li {
-    float: left;
-        /*ATENÇÃO ORDENE OS ITENS NA MESMA ORDEM QUE ESTÃO NO HTML*/
-    margin-left: 18px;
-        /* FIM*/
-}
-
-.header a {
-    text-transform: uppercase;
-    color: #232323;
-}
-
-.header a:hover {
-    font-weight: bold;
-}
-
-.header .current {
-    color: #bf7788;
-    font-weight: bold;
-}
-
-/* JUMBOTRON 
-    aka BANNER */
-
-/*colocar tudo que está acima em header */
-
-.banner {
-    height: 400px;
-    width: 100%;
-}
-
-.banner .container {
-    height: 400px;
-}
-
-.banner .texto {
-    color: gray;
-    text-align: center;
-    padding-top: 100px;
-
-}
-
-.banner .titulo {
-    font-size: 48px;
-    color:  #bf7788;
-}
-
-/* NOVIDADES */
-
-.novidades {
-    background-color: #232323;
-    overflow:auto;
-}
-
-.novidades .container {
-    padding: 30px 0;
-}
-
-.novidades h2 {
-    color: rgb(216, 216, 216);
-    margin-top: 0;
-    padding-top: 0;
-    font-weight: 400;
-}
-
-.novidades form {
+.icon_header{
     float: right;
+    padding-top: 14px;
 }
-
-.novidades input {
-    border: 0;
-    height: 35px;
-    width: 250px;
+/* A partir daqui começa o conteúdo */
+.cont_conteudo{
+    float:right;
+    height: 545px;
+    width:98.5%;
 }
-
-.novidades button {
-    background-color:  #bf7788;
-    border: 0;
-    height: 38px;
-    padding: 0 20px;
-}
-
-.saber-mais {
-    text-align: center;
-}
-
-/* ICONES */
-
-.box {
-    overflow: auto;
-    background-color: #F8FCFFbe ;
-}
-
-.box .box-item {
+.texto {
     float: left;
-    width: 33%;
+    margin-top: 7.7%;
+    background: rgb(222 222 222 / 90%); /* Uso do RGB para dar a opacidade */
+    width: 80%;
+    border: 2px solid black;
+    height: 135%;
+}
+.navegar {
+    float: right;
+    background: rgb(222 222 222 / 90%);
+    margin-top: 7.5%;
+    margin-left: 80%;
+    position: fixed; /* Manter o box de navegar fico*/
+    width: 20%;
+    border: 2px solid black;
+    height: 34%;
+}
+.titulo_texto {
+    font-size: 38px;
+    background: -webkit-linear-gradient(#FF5C00, #000000); /*Na área que possuir isso, tem como background estabelecido essas duas cores de forma linear*/
+    -webkit-background-clip: text;/*converter o campo de background para texto*/
+    -webkit-text-fill-color: transparent;/* faz com que as 2 cores apareçam ao mesmo tempo, ao invés de só uma*/
     text-align: center;
-    margin: 50px 0;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
-
-.box .box-item img {
-    height: 100px;
-}
-
-/* FOOTER */
-
-.footer {
-    background-color:  #bf7788;
+.titulo_texto2{
+    font-size: 38px;
+    background: linear-gradient(180deg, #FF5C00 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(0deg, #000000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    height: 100px;
+    margin-top:5px;
+    margin-bottom:15px;
 }
-
-.footer h4 {
-    color: white;
-    font-weight: 100;
+.texto_text{
+    font-size: 24px;
+    color: #000000;
+}
+.nav_text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: #000000;
+    margin-left: 15px;
+    margin-top:5px;
+}
+.mapa {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    max-width: 100%; /*Para ele ocupar 100% do espaço pré-definido*/
+    border: 2px solid #000000;
+}
+.bloquinho_legenda {
+    background-color: whitesmoke;
+    border: 2px solid #000000;
+    width: 100px;
+    height: 45%;
+    margin-left: 40%;
+    float: left;
+}
+p{
     margin: 0;
-    padding-top: 40px;
+}
+.distanciamento {
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.paragrafo{
+   margin-left: 40px; 
+}
+a{
+    text-decoration: none;/*tirar o underline do a*/
 }
 
-/* SOBRE - ASSUNTOS */
-
-.assuntos {
-    background-color:#232323;
-    overflow: auto;
-    padding-top: 30px;
-    text-align: center;
-    padding-bottom: 50px; /*aqui oh a diferença entre padding e margin*/
-    color:  #bf7788
-}
-
-.assuntos .assunto {
-    border-bottom: 3px solid #bf7788;
-    background-color: white;
-    padding: 50px 5px;
-    float: left;
-    width: 450px;
-    margin-left: 55px; 
-}
-
-.assuntos h2 {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-.assuntos p {
-    line-height: 1.5;
-}
-
-/* SOBRE - INTEGRANTES */
-
-.nosso-time {
-    background-color: #232323;
-    text-align: center;
-    overflow: auto;
-} 
-
-.nosso-time h2 {
-    margin: 0;
-    padding-top: 25px;
-    color: white;
-    text-transform: uppercase;
-}
-
-.nosso-time .integrantes {
-    /* border: 3px solid yellow; */
-    color: white;
-    overflow: auto;
-    margin-top: 30px;
-    padding-bottom: 35px;
-}
-
-
-.nosso-time .integrantes .integrante {
-    /*border: 3px solid cyan;*/
-    width: 180px;
-    float: left;
-    padding: 5px;
-    margin-left: 20px;
-    line-height: 1.5;
-}
-
-.nosso-time .integrante img {
-    height: 100px;
-    background-color:  #bf7788;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-/* ASSUNTO GRANDE */
-
-.assuntos .assunto-grande {
-    border-bottom: 3px solid  #bf7788;
-    background-color: white;
-    padding: 50px 30px;
-    float: left;
-    /* width: 450px; */
-    margin-left: 55px; 
-}
-
-#b_usuario {
-    color: #bf7788
-}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="CSS/cadastro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftBunker - Cadastre-se</title>
+</head>
+<body>
+    <center>
+    <div class="login">
+        <div class="formulario">
+        <img src="imagens/icon.png" width="100" height="100" alt="icon.jpg">
+        <h1>CADASTRE-SE</h1>
+        </div>        
+        <form name="preencher" method="POST" id="form_cadastro" onsubmit="return cadastrar()">
+            <label for="usuario"><b>Usuário</b></label>
+                <input id="input_usuario" name="usuario" type="text" placeholder="Insira seu nome de usuário" autofocus="autofocus" required minlength="4">
+            <label for="email"><b>E-mail</b></label>
+                <input id="input_email" name="email" type="email" placeholder="Insira o seu e-mail" required >
+            <label for="senha"><b>Senha</b></label>
+                <input id="input_senha" name="senha" type="password" placeholder="Insira a sua senha (min. 8 digitos)" required minlength="8">
+            <label for="confirmar_cadastro"><b>Confirme sua Senha</b></label>
+                <input id="input_confirmar" type="password" placeholder="Repita sua senha para confirmar" required minlength="8">
+                <button class="botao" type="submit">Concluir</button>
+        </form>
+    </center>
+    </div>
+    <div id="div_erro"></div>
+</body>
+</html>
+
+<script>
+
+// Vincular com o Banco
+function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='tela_login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+            }
+        });
+        return false;
+    }
+</script>
