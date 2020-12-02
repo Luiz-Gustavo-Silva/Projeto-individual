@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/guerra.css">
-    <script type="text/javascript" href="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script href="JS/slide.js"></script>
+    <script type="text/javascript" src="js/usuario.js"></script>
+    <link rel="sortcut icon" href="imagens/logo.png" type="image/png">
     <title>SoftBunker - Guerras</title>
 </head>
 <body>
@@ -18,8 +18,8 @@
             <div class="titulo_hdr">
                 <b><span>S</span>oftBunker</b>
             </div>
-            <div class="titulo_usuario">
-                    Usuário
+            <div class="titulo_usuario" id="titulo_user">
+                <a style="color:goldenrod" href="tela_login.html">Faça Login</a>
             </div>
             <div class="icon_header">
                 <img width="50px" src="imagens/icon_index.png">
@@ -41,33 +41,33 @@
             </div>
             <div class="container">
                 <div class="alinhar">
-                    <img class="carrossel1 imagem_guerra" id="imagem_guerra" src="imagens/primeiraguerra.jpg" width="450px" height="300px">
-                    <img class="carrossel1 imagem_guerra1" id="imagem_guerra1" src="imagens/primeiraguerra1.jpg" width="450px" height="300px">
-                    <img class="carrossel1 imagem_guerra2" id="imagem_guerra2" src="imagens/primeiraguerra2.jpg" width="450px" height="300px">
-                    <img class="carrossel1 imagem_guerra3" id="imagem_guerra3" src="imagens/primeiraguerra3.jpg" width="450px" height="300px">
+                    <img class="imagem_guerra" id="imagem_guerra" src="imagens/primeiraguerra.jpg" width="450px" height="300px">
+                    <img class="imagem_guerra1" id="imagem_guerra1" src="imagens/primeiraguerra1.jpg" width="450px" height="300px">
+                    <img class="imagem_guerra2" id="imagem_guerra2" src="imagens/primeiraguerra2.jpg" width="450px" height="300px">
+                    <img class="imagem_guerra3" id="imagem_guerra3" src="imagens/primeiraguerra3.jpg" width="450px" height="300px">
                 </div>
                 <br><div class="guia">Altere as imagens </div>
                     <div class="centralizar bloquinho_de_imagens">
-                        <a href="#imagem_guerra"><div class="botao" onclick="mudar_1_1()" id="botao1" src="imagens/branco.png"></div></a>
-                        <a href="#imagem_guerra1"><div class="botao"  onclick="mudar_1_2()"id="botao2" src="imagens/branco.png"></div></a>
-                        <a href="#imagem_guerra2"><div class="botao"  onclick="mudar_1_3()"id="botao3" src="imagens/branco.png"></div></a>
-                        <a href="#imagem_guerra3"><div class="botao"  onclick="mudar_1_4()"id="botao4" src="imagens/branco.png"></div></a>
+                        <a><div class="botao" onclick="mudar_1_1()" id="botao1" src="imagens/branco.png"></div></a>
+                        <a><div class="botao"  onclick="mudar_1_2()"id="botao2" src="imagens/branco.png"></div></a>
+                        <a><div class="botao"  onclick="mudar_1_3()"id="botao3" src="imagens/branco.png"></div></a>
+                        <a><div class="botao"  onclick="mudar_1_4()"id="botao4" src="imagens/branco.png"></div></a>
                     </div>
                     <br><br>
-                    <b style="color:black;"class="subtitulo1"><div class="subtitulo2"><img src="imagens/cadeado.png" width="25px" title="Bloqueado para realizar uma manutenção"><u title="Bloqueado para realizar uma manutenção">Segunda Guerra Mundial (1939-1945)</u></div></b>
+                    <b style="color:black;"class="subtitulo1"><div class="subtitulo2"><img src="imagens/cadeado.png" width="25px" title="Em construção"><u title="Em construção">Segunda Guerra Mundial (1939-1945)</u></div></b>
                     <p class="descricao2">Segundo enorme conflito generalizado entre diversos paises (e não é que aconteceu denovo).</p>
                     <div class="alinhar2" >
-                        <img class="carrossel2 imagem_guerra_2" id="imagem_guerra_2" src="imagens/segundaguerra.png" width="450px" height="300px">
-                        <img class="carrossel2 imagem_guerra_2_1" id="imagem_guerra_2_1" src="imagens/segundaguerra1.jpg" width="450px" height="300px">
-                        <img class="carrossel2 imagem_guerra_2_2" id="imagem_guerra_2_2" src="imagens/segundaguerra2.jpg" width="450px" height="300px">
-                        <img class="carrossel2 imagem_guerra_2_3" id="imagem_guerra_2_3" src="imagens/segundaguerra3.jpg" width="450px" height="300px">
+                        <img class="imagem_guerra_2" id="imagem_guerra_2" src="imagens/segundaguerra.png" width="450px" height="300px">
+                        <img class="imagem_guerra_2_1" id="imagem_guerra_2_1" src="imagens/segundaguerra1.jpg" width="450px" height="300px">
+                        <img class="imagem_guerra_2_2" id="imagem_guerra_2_2" src="imagens/segundaguerra2.jpg" width="450px" height="300px">
+                        <img class="imagem_guerra_2_3" id="imagem_guerra_2_3" src="imagens/segundaguerra3.jpg" width="450px" height="300px">
                     </div>
                     <br><div class="guia">Altere as imagens </div>
                         <div class="centralizar bloquinho_de_imagens">
-                            <a href="#imagem_guerra_2"><img class="botao" style="margin-left: 4.5%;" onclick="mudar_2_1()" id="botao1_2" src="imagens/branco.png"></a>
-                            <a href="#imagem_guerra_2_1"><img class="botao" onclick="mudar_2_2()" id="botao2_2" src="imagens/branco.png"></a>
-                            <a href="#imagem_guerra_2_2"><img class="botao" onclick="mudar_2_3()" id="botao3_2" src="imagens/branco.png"></a>
-                            <a href="#imagem_guerra_2_3"><img class="botao" onclick="mudar_2_4()" id="botao4_2" src="imagens/branco.png"></a>
+                            <a><img class="botao" style="margin-left: 4.5%;" onclick="mudar_2_1()" id="botao1_2" src="imagens/branco.png"></a>
+                            <a><img class="botao" onclick="mudar_2_2()" id="botao2_2" src="imagens/branco.png"></a>
+                            <a><img class="botao" onclick="mudar_2_3()" id="botao3_2" src="imagens/branco.png"></a>
+                            <a><img class="botao" onclick="mudar_2_4()" id="botao4_2" src="imagens/branco.png"></a>
                         </div>
                     </div>
                 </div>
@@ -78,13 +78,13 @@
         <div class="navegar">
             <h1 class="titulo_texto2">Navegar</h1>
             <p class="nav_text">
-                    <a style="color:black" href="index.html">Home</a>
+                    <a style="color:black" class="link1" href="index.html">Home</a>
                     <img height="30px" src="imagens/home_icon.png"><br>
                     <b><u>Guerras</b></u>
                     <img height="30px" src="imagens/arma_icon.png"><br>
-                    <a style="color:black" href="curiosidades.html">Curiosidades</a>
-                    <img height="30px" src="imagens/lupa_icon.png"><br>
-                    <a style="color:black" href="sobre.html">Sobre mim</a>
+                    <a class="link3" style="color:black" href="mapasmentais.html">Mapas Mentais</a>
+                    <img height="30px" src="imagens/mapaMental.png"><br>
+                    <a class="link4" style="color:black" href="sobre.html">Sobre mim</a>
                     <img height="30px" src="imagens/usuario_icon.png"><br>
             </p>
         </div>
@@ -93,6 +93,13 @@
 </html>
 
 <script>
+var usuario = sessionStorage.getItem('nome');
+    if (usuario == null){
+        titulo_user.innerHTML = `<a style="color:goldenrod" href="tela_login.html">Usuário</a>`;
+    }else{
+        titulo_user.innerHTML = ` <a style="color:goldenrod" href="tela_login.html">${usuario}</a>`;
+    }
+
     imagem_guerra_2_1.style = `display:none`;
     botao2.style = `background-color: white`;
     imagem_guerra_2_2.style = `display:none`;

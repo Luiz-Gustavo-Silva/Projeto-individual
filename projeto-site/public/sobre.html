@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/sobre.css">
+    <title>SoftBunker - Seja bem-vindo!</title>
+    <link rel="sortcut icon" href="imagens/logo.png" type="image/png">
+    <script type="text/javascript" src="js/usuario.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="imagens/logo.png">
+            </div>
+            <div class="titulo_hdr">
+                <b><span>S</span>oftBunker</b>
+            </div>
+            <div class="titulo_usuario" id="titulo_user">
+                <a style="color:goldenrod" href="tela_login.html">Faça Login</a>
+            </div>
+            <div class="icon_header">
+                <img width="50px" src="imagens/icon_index.png">
+            </div>
+        </div>
+    </div>
+    <!-- Aqui acima é todo o header -->
+
+    <div class="cont_conteudo">
+        <div class="texto">
+            <center>
+                <h1 class="titulo_texto">Qual nossa missão</h1>
+            </center>
+            <div class="container">
+                <div class="texto_text">
+                    <p>
+                        <span class="distanciamento">O projeto <b>Softbunker</b> consiste em uma página web com
+                        o <b>conteúdo 100% voltado a história</b></span> das guerras, com
+                        a menor quantidade de conjunto de blocos repletos
+                        de textos, nenhuma imagem medonha e com ilustrações,
+                        <b>tornando a leitura mais confortável.</b>
+                    </p>
+                </div>
+                <br>
+                <img src="imagens/luiz.jpeg" style="border: 2px solid #000000; float: left;" width="300px">
+                <div class="texto_text">
+                    <ul style="float: left;margin-top: 14.5%;margin-bottom: 14.5%;">
+                        <li>Me chamo <b>Luiz Gustavo da Silva;</b></li>
+                        <li>Tenho <b>17 anos;</b></li>
+                        <li>Moro em <b>Mauá - São Paulo;</b></li>
+                        <li>Curso <b>ADS</b> na <b>Bandtec Digital School;</b></li>
+                        <li>Adoro programar em <b>C, VB.NET, COBOL</b> e <b>BATCH.</b></li>
+                    </ul><br>
+                    <span class="distanciamento"><br>Deixando bem claro, eu não gosto de guerras, eu prezo
+                    pela paz, contudo eu adoro estudar sobre as que
+                    já ocorreram, a logística, as armas, a política,
+                    as economias, é de fato um dos meus hobbies.</span> 
+                </div>
+            </div>
+        </div>
+        <div class="navegar">
+            <h1 class="titulo_texto2">Navegar</h1>
+            <p class="nav_text">
+                <a style="color:black" href="index.html">home</a>
+                <img height="30px" src="imagens/home_icon.png"><br>
+                <a style="color:black" href="guerras.html">Guerras</a>
+                <img height="30px" src="imagens/arma_icon.png"><br>
+                <a style="color:black" href="mapasmentais.html">Mapas Mentais</a>
+                <img height="30px" src="imagens/mapaMental.png"><br>
+                <b><u>Sobre mim</u></b>
+                <img height="30px" src="imagens/usuario_icon.png"><br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+var usuario = sessionStorage.getItem('nome');
+    if (usuario == null){
+        titulo_user.innerHTML = `<a style="color:goldenrod" href="tela_login.html">Usuário</a>`;
+    }else{
+        titulo_user.innerHTML = ` <a style="color:goldenrod" href="tela_login.html">${usuario}</a>`;
+    }
+</script>

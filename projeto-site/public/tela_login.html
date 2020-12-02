@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftBunker - Login</title>
+    <script type="text/javascript" src="js/usuario.js"></script>
+    <link rel="sortcut icon" href="imagens/logo.png" type="image/png">
 </head>
 <body>
     <center>
@@ -14,8 +16,8 @@
         <h1>LOGIN</h1>
         </div>        
         <form id="form_login" method="post" onsubmit="return entrar()">
-            <label for="usuario"><b>Usuário ou E-mail</b></label>
-            <input type="text" id="input_user" name="usuario" placeholder="Insira o seu nome de usuário ou e-mail">
+            <label for="usuario"><b>Nome de Usuário</b></label>
+            <input type="text" id="input_user" name="usuario" placeholder="Insira o seu nome de usuário">
             <label for="senha"><b>Senha</b></label>
             <input type="password" id="input_senha" name="senha" placeholder="Insira a sua senha">
             <a class="sem_conta" href="tela_cadastro.html">Não possuo uma conta</a>
@@ -39,7 +41,7 @@
                 resposta.json().then(json => {
 
                     sessionStorage.login_usuario_meuapp = json.login;
-                    sessionStorage.setItem('nome', json.nome);
+                    sessionStorage.setItem('nome', json.usuario);
 
 
                     window.location.href = 'index.html';

@@ -1,0 +1,18 @@
+.mapa {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    max-width: 100%;
+    border: 2px solid #000000;
+}
+.texto {
+    float: left;
+    margin-top: 7.7%;
+    background: rgb(222 222 222 / 90%);
+    width: 80%;
+    border: 2px solid black;
+    height: 245%;
+}
+a{
+    color:#000000;
+}

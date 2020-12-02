@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/primeiraguerra.css">
     <title>SoftBunker - Primeira Guerra</title>
+    <link rel="sortcut icon" href="imagens/logo.png" type="image/png">
+    <script type="text/javascript" src="js/usuario.js"></script>
 </head>
 <body>
     <div class="header">
@@ -16,8 +18,8 @@
                 <div class="titulo_hdr">
                     <b><span>S</span>oftBunker</b>
                 </div>
-                <div class="titulo_usuario">
-                    Usuário
+                <div class="titulo_usuario" id="titulo_user">
+                    <a style="color:goldenrod" href="tela_login.html">Faça Login</a>
                 </div>
                 <div class="icon_header">
                     <img width="50px" src="imagens/icon_index.png">
@@ -102,9 +104,9 @@
                 <center>
                     <span class="subtitulo">Principais Eventos</span>
                     <br>Alguns eventos que marcaram a primeira guerra mundial<br>
-                    <br><img style="border: 2px solid #000000" src="imagens/eventos.jpg">
                 </center>
-                <ul style="margin-left: 20%;">
+                <br><img style="border: 2px solid #000000;float: left;" src="imagens/eventos.jpg">
+                <ul style="margin-left: 30%;margin-top: 12px;">
                     <li>O vasto uso de aviões para bombardeamento.</li>
                     <li>Uso de bombas químicas contra a infantaria.</li>
                     <li>Navios dos Estados Unidos e do Brasil são torpedeados.</li>
@@ -216,8 +218,8 @@
                 <input id="in_pri1" name="rad1" type="radio"><label id="lb_pri1" for="in_pri1">Masculino</label>
                 <input id="in_seg1" name="rad1" type="radio"> <label id="lb_seg1" for="in_seg1">Feminino</label><br>
                 <span style="float: left; font-size: 22px; margin-left: 30%;">Você é filho único?</span>
-                <input id="in_pri2" name="rad2" type="radio"><label id="lb_pri2" for="in_pri2">sim</label>
-                <input id="in_seg2" name="rad2" type="radio"> <label id="lb_seg2" for="in_seg2">não</label>
+                <input id="in_pri2" name="rad2" type="radio"><label id="lb_pri2" for="in_pri2">Sim</label>
+                <input id="in_seg2" name="rad2" type="radio"> <label id="lb_seg2" for="in_seg2">Não</label>
                 <div id="div_mens"></div><br>
                 <center><button style="font-size: 22px;" onclick="alistar()">Tentar Ingressar</button></center>
                 <br>
@@ -232,8 +234,8 @@
             <img height="30px" src="imagens/home_icon.png"><br>
             <a style="color:black" href="guerras.html">Guerras</a>
             <img height="30px" src="imagens/arma_icon.png"><br>
-            <a style="color:black" href="curiosidades.html">Curiosidades</a>
-            <img height="30px" src="imagens/lupa_icon.png"><br>
+            <a style="color:black" href="mapasmentais.html">Mapas Mentais</a>
+            <img height="30px" src="imagens/mapaMental.png"><br>
             <a style="color:black" href="sobre.html">Sobre mim</a>
             <img height="30px" src="imagens/usuario_icon.png"><br>
         </p>
@@ -243,8 +245,14 @@
 </html>
 
 <script>
+var usuario = sessionStorage.getItem('nome');
+    if (usuario == null){
+        titulo_user.innerHTML = `<a style="color:goldenrod" href="tela_login.html">Usuário</a>`;
+    }else{
+        titulo_user.innerHTML = ` <a style="color:goldenrod" href="tela_login.html">${usuario}</a>`;
+    }
     function alistar(){
-        let numeroValidar;
+        var numeroValidar;
         if (in_nome.value == ''){
             alert("Por favor não deixe o campo do nome em branco");
         }else{
@@ -265,6 +273,7 @@
         if(numeroValidar == 1){
             if (in_idade.value < 18 || in_idade.value > 45){
                 div_mens.innerHTML = `<center><br>${in_nome.value} você não possui a idade entre 18 e 45 anos, logo não é obrigado a ir<br></center>`;
+                arrumarTexto.style = `height: 1446%;`;
             }else{
                 if(in_pri1.checked == true){
                     div_mens.innerHTML = `<center><br>${in_nome.value} por você ser homem, iria ser obrigado a lutar pelo país.
@@ -278,12 +287,14 @@
             }
             if(in_pri2.checked == true && numeroValidar == 2){
                 div_mens.innerHTML += `<span style="margin-left: 17.5%;">Pode ficar tranquilo, afinal filho único também vai para guerra.<br></span>`;
-                arrumarTexto.style = `height: 1483%;`;
-            }else if(in_seg2.checked == true && numeroValidar == 2){
-                div_mens.innerHTML += `<span style="margin-left: 17.5%;>Pode ficar tranquilo não foi azar, afinal filho único também vai para guerra.<br></span>`;
-                arrumarTexto.style = `height: 1483%;`;
-            }else{}
-        }else{}
+                arrumarTexto.style = `height: 1457%;`;
+            }else if(in_seg2.checked == true && numeroValidar ==2){
+                div_mens.innerHTML += `<span style="margin-left: 11%;">Pode ficar tranquilo não foi azar, afinal filho único também vai para guerra.<br></span>`;
+                arrumarTexto.style = `height: 1457%;`;
+            }else{
+
+            }
+        }
     }
         
 </script>

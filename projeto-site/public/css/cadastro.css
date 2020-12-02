@@ -76,6 +76,7 @@ h1{
     outline: none;
     height: 35px;
     width: 200px;
+    margin-top: 8%;
     margin-bottom: 8%;
     color: white;
     background: black;
@@ -92,4 +93,14 @@ img{
 }
 .img_nav{
     width:10px;
+}
+.voltar{
+    text-align: left;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+.voltar:hover{
+    color:white;
 }

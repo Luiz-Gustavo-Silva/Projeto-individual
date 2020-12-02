@@ -71,7 +71,7 @@ body{
     position: fixed; /* Manter o box de navegar fico*/
     width: 20%;
     border: 2px solid black;
-    height: 34%;
+    height: max-content;
 }
 .titulo_texto {
     font-size: 38px;
@@ -97,12 +97,13 @@ body{
     font-size: 24px;
     color: #000000;
 }
-.nav_text{
+.nav_text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
     color: #000000;
     margin-left: 15px;
-    margin-top:5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 .mapa {
     margin: auto;
