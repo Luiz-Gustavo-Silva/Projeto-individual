@@ -234,7 +234,7 @@
             <img height="30px" src="imagens/home_icon.png"><br>
             <a style="color:black" href="guerras.html">Guerras</a>
             <img height="30px" src="imagens/arma_icon.png"><br>
-            <a style="color:black" href="mapasmentais.html">Mapas Mentais</a>
+            <a style="color:black;" id="mapaMental" href="mapasmentais.html">Mapas Mentais</a>
             <img height="30px" src="imagens/mapaMental.png"><br>
             <a style="color:black" href="sobre.html">Sobre mim</a>
             <img height="30px" src="imagens/usuario_icon.png"><br>
@@ -248,8 +248,15 @@
 var usuario = sessionStorage.getItem('nome');
     if (usuario == null){
         titulo_user.innerHTML = `<a style="color:goldenrod" href="tela_login.html">Usuário</a>`;
+        mapaMental.innerHTML = `<a><strike style="cursor:pointer;">Mapas Mentais</strike></a>`;
+        mapaMental.removeAttribute("href");
+        mapaMental.setAttribute("onclick","mapa()");
     }else{
         titulo_user.innerHTML = ` <a style="color:goldenrod" href="tela_login.html">${usuario}</a>`;
+        mapaMental.innerHTML = `<a style="color:black;" id="mapaMental" href="mapasmentais.html">Mapas Mentais</a>`;
+    }
+    function mapa(){
+        alert("Tem que fazer login para poder acessar os mapas mentais.");
     }
     function alistar(){
         var numeroValidar;
@@ -289,7 +296,7 @@ var usuario = sessionStorage.getItem('nome');
                 div_mens.innerHTML += `<span style="margin-left: 17.5%;">Pode ficar tranquilo, afinal filho único também vai para guerra.<br></span>`;
                 arrumarTexto.style = `height: 1457%;`;
             }else if(in_seg2.checked == true && numeroValidar ==2){
-                div_mens.innerHTML += `<span style="margin-left: 11%;">Pode ficar tranquilo não foi azar, afinal filho único também vai para guerra.<br></span>`;
+                div_mens.innerHTML += `<span style="margin-left: 20%;">Não foi azar, afinal filho único também vai para guerra.<br></span>`;
                 arrumarTexto.style = `height: 1457%;`;
             }else{
 
